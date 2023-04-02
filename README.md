@@ -19,4 +19,8 @@ $ docker save my/nginx:latest | sudo k3s ctr images import -
 $ sudo k3s kubectl apply -f main.yml
 
 $ sudo k3s kubectl get pod
+
+$ curl http://locahost:8080/
+
+$ sudo k3s kubectl delete -f main.yml
 ```
