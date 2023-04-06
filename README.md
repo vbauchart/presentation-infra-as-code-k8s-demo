@@ -1,14 +1,19 @@
 # Very simple Kubernetes demo
 
-## Prepare the demo
+## Docker demo
+
+```
+$ docker build -t my/nginx:latest .
+$ docker run -p 8082:80 my/nginx:latest
+```
+
+## Kubernetes demo
 
 Start k3s
 
 ```
 $ sudo -i k3s server
 ```
-
-## Run the demo
 
 
 ```

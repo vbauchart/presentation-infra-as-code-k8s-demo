@@ -1,9 +1,11 @@
-FROM alpine
+FROM debian:bullseye
 
-RUN apk add nginx
+RUN apt update && \
+    apt install -y nginx && \
+    apt clean
 
-COPY nginx-config/default.conf /etc/nginx/http.d/default.conf
+COPY nginx-config/default.conf /etc/nginx/sites-enabled/default
 
-COPY nginx-config/index.html /var/www/localhost/htdocs/index.html
+COPY nginx-config/index.html /var/www/html/demo/index.html
 
 CMD nginx -g 'daemon off;'
