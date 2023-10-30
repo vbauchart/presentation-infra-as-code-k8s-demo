@@ -1,5 +1,11 @@
 # Very simple Kubernetes demo
 
+## Kata build fixing
+
+This Dockerfile has errors. You must fix every errors to make the resulting docker image running.
+
+This Dockerfile also has a size optimisation to find.
+
 ## Docker demo
 
 ```
@@ -8,6 +14,8 @@ $ docker run -p 8082:80 my/nginx:latest
 ```
 
 ## Kubernetes demo
+
+Read https://docs.k3s.io/quick-start then install k3s using your prefered method.
 
 Start k3s
 
